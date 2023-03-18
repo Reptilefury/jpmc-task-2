@@ -21,26 +21,20 @@
 # from itertools import izip
 from random import normalvariate, random
 from datetime import timedelta, datetime
-
 import csv
 import dateutil.parser
 import os.path
-
 import operator
 import json
 import re
 import threading
-
 # from BaseHTTPServer import BaseHTTPRequestHandler,HTTPServer
 import http.server
 from socketserver import ThreadingMixIn
-
 ################################################################################
 #
 # Config
-
 # Sim params
-
 REALTIME = True
 SIM_LENGTH = timedelta(days=365 * 5)
 MARKET_OPEN = datetime.today().replace(hour=0, minute=30, second=0)
